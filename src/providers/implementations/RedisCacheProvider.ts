@@ -5,6 +5,7 @@ export class RedisCacheProvider implements ICacheProvider {
   private readonly redisClient: RedisClientType;
 
   constructor() {
+    // TODO: Use Docker Compose to set up a Redis instance.
     this.redisClient = createClient();
   }
 
