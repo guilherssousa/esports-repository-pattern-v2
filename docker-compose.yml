@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  pg:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=esports
+      - POSTGRES_PASSWORD=fakerthegoat
+      - POSTGRES_DB=esportsapi
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "15432:80"
+    depends_on:
+      - pg
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=esports@company.com
+      - PGADMIN_DEFAULT_PASSWORD=fakerthegoat

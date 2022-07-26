@@ -1,7 +1,7 @@
 import { slugify } from "../utils/slugify";
 
 export class Player {
-  public readonly slug?: string;
+  public readonly slug: string;
 
   public name: string;
   public full_name: string;
