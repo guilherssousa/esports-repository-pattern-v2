@@ -5,8 +5,6 @@ export class CreatePlayerController {
   constructor(private createPlayerService: CreatePlayerService) {}
 
   async handle(req: Request, res: Response) {
-    console.log(`[CreatePlayerController] handle()`);
-
     try {
       const { name, nationality, full_name } = req.body;
 

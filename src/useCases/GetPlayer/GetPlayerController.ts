@@ -5,8 +5,6 @@ export class GetPlayerController {
   constructor(private getPlayerService: GetPlayerService) {}
 
   async handle(req: Request, res: Response) {
-    console.log(`[GetPlayerController] handle()`);
-
     try {
       const { slug } = req.params;
 

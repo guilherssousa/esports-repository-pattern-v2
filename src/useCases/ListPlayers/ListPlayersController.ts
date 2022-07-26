@@ -5,8 +5,6 @@ export class ListPlayersController {
   constructor(private listPlayersService: ListPlayersService) {}
 
   async handle(req: Request, res: Response) {
-    console.log(`[ListPlayersController] handle()`);
-
     try {
       const { limit } = req.params;
 
